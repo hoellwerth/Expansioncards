@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Expansion_Card")(type "KiCad")(uri "${KIPRJMOD}/Expansion_Card.pretty")(options "")(descr ""))
+  (lib (name "Downloads")(type "KiCad")(uri "/home/johannes/Downloads")(options "")(descr ""))
+)

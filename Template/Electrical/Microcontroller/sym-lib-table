@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "gd25q16ct")(type "Legacy")(uri "${KIPRJMOD}/gd25q16ct.lib")(options "")(descr ""))
+  (lib (name "Microcontroller-rescue")(type "Legacy")(uri "${KIPRJMOD}/Microcontroller-rescue.lib")(options "")(descr ""))
+)
