@@ -1799,6 +1799,7 @@
     (uuid fd5f651d-d64f-46fe-b0e2-2b0b0eb65a36)
   )
 
+  (no_connect (at 86.36 144.78) (uuid 16024aae-b060-495e-b082-1bdde42b95b4))
   (no_connect (at 86.36 129.54) (uuid 1f9b4d84-bb2b-4028-9c2a-2159a2245594))
   (no_connect (at 86.36 127) (uuid 268153f5-0751-4710-82e5-c37d61dfa301))
   (no_connect (at 15.24 99.06) (uuid 2c332487-0f28-4157-9cb9-f9abae7350e7))
@@ -2501,10 +2502,6 @@
   (label "TERM" (at 195.58 111.76 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 88505cf8-e4ff-4994-945b-88f645afb741)
-  )
-  (label "NPXL" (at 86.36 144.78 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 8b4759f9-781e-4b65-871d-707de0a93aa0)
   )
   (label "CC" (at 57.15 36.83 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
