@@ -14,11 +14,11 @@
   )
 
   (lib_symbols
-    (symbol "Connector:Screw_Terminal_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
+    (symbol "Connector:Screw_Terminal_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Screw_Terminal_01x02" (at 0 -5.08 0)
+      (property "Value" "Screw_Terminal_01x04" (at 0 -7.62 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -30,18 +30,30 @@
       (property "ki_keywords" "screw terminal" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "TerminalBlock*:*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Screw_Terminal_01x02_1_1"
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
+      (symbol "Screw_Terminal_01x04_1_1"
+        (rectangle (start -1.27 3.81) (end 1.27 -6.35)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
+        (circle (center 0 -5.08) (radius 0.635)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
         (circle (center 0 -2.54) (radius 0.635)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.5334 -4.7498)
+            (xy 0.3302 -5.588)
+          )
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
@@ -63,6 +75,22 @@
         )
         (polyline
           (pts
+            (xy -0.5334 2.8702)
+            (xy 0.3302 2.032)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.3556 -4.572)
+            (xy 0.508 -5.4102)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
             (xy -0.3556 -2.032)
             (xy 0.508 -2.8702)
           )
@@ -77,17 +105,37 @@
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
+        (polyline
+          (pts
+            (xy -0.3556 3.048)
+            (xy 0.508 2.2098)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
         (circle (center 0 0) (radius 0.635)
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
+        (circle (center 0 2.54) (radius 0.635)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+        (pin passive line (at -5.08 0 0) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -324,67 +372,6 @@
         (pin passive line (at -7.62 -22.86 90) (length 5.08)
           (name "SHIELD" (effects (font (size 1.27 1.27))))
           (number "S1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x04" (at 0 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x04_1_1"
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 3.81) (end 1.27 -6.35)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -940,6 +927,46 @@
         )
       )
     )
+    (symbol "GND_4" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GND_4" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GND_4_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GND_4_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Interface_CAN_LIN:SN65HVD230" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -2.54 10.16 0)
         (effects (font (size 1.27 1.27)) (justify right))
@@ -1228,58 +1255,6 @@
         (pin passive line (at 2.54 5.08 270) (length 2.54)
           (name "D" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "VBUS_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "VBUS_1" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"VBUS\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "VBUS_1_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "VBUS_1_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "VBUS" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1700,6 +1675,10 @@
     (stroke (width 0) (type default))
     (uuid 09892492-8a30-4dba-8d36-d5a697243d67)
   )
+  (wire (pts (xy 208.28 133.35) (xy 208.28 135.89))
+    (stroke (width 0) (type default))
+    (uuid 0ab57d44-32c6-43cd-8324-a64740b94af7)
+  )
   (wire (pts (xy 55.88 100.33) (xy 63.5 100.33))
     (stroke (width 0) (type default))
     (uuid 0f7ac8b9-19b7-47e9-b3e0-b016b2b5524e)
@@ -1719,10 +1698,6 @@
   (wire (pts (xy 198.12 93.98) (xy 201.93 93.98))
     (stroke (width 0) (type default))
     (uuid 152f4850-7a24-4bc4-bc1a-22b6d0f9643b)
-  )
-  (wire (pts (xy 198.12 137.16) (xy 193.04 137.16))
-    (stroke (width 0) (type default))
-    (uuid 1840f2ec-a41f-4f88-a6d6-817a55e6538b)
   )
   (wire (pts (xy 127 133.35) (xy 119.38 133.35))
     (stroke (width 0) (type default))
@@ -1832,10 +1807,6 @@
     (stroke (width 0) (type default))
     (uuid 5266af0c-1d9d-4ad0-a3c6-99a86db5dcd7)
   )
-  (wire (pts (xy 193.04 139.7) (xy 198.12 139.7))
-    (stroke (width 0) (type default))
-    (uuid 536a291a-5e35-409d-ab2d-d9daa35effc2)
-  )
   (wire (pts (xy 236.22 52.07) (xy 236.22 57.15))
     (stroke (width 0) (type default))
     (uuid 53bcb054-1d27-4179-bdab-37f844743934)
@@ -1855,14 +1826,6 @@
   (wire (pts (xy 52.07 31.75) (xy 54.61 31.75))
     (stroke (width 0) (type default))
     (uuid 61cd66a2-9af6-452a-86b9-7163d4e93033)
-  )
-  (wire (pts (xy 198.12 132.08) (xy 193.04 132.08))
-    (stroke (width 0) (type default))
-    (uuid 6241633f-77a7-4abe-ba8c-563c0a3b9a85)
-  )
-  (wire (pts (xy 198.12 129.54) (xy 198.12 132.08))
-    (stroke (width 0) (type default))
-    (uuid 638dbe04-890d-41d2-b719-726adfd08770)
   )
   (wire (pts (xy 54.61 31.75) (xy 54.61 25.4))
     (stroke (width 0) (type default))
@@ -1924,9 +1887,9 @@
     (stroke (width 0) (type default))
     (uuid 8f4efcba-4ad8-46f8-8627-f70b4d671402)
   )
-  (wire (pts (xy 198.12 134.62) (xy 193.04 134.62))
+  (wire (pts (xy 205.74 143.51) (xy 208.28 143.51))
     (stroke (width 0) (type default))
-    (uuid 9613f940-69f0-4f97-9909-fd48a856e9db)
+    (uuid 939f5473-4b59-4eb5-8355-e097734ace38)
   )
   (wire (pts (xy 127 140.97) (xy 119.38 140.97))
     (stroke (width 0) (type default))
@@ -1944,6 +1907,10 @@
     (stroke (width 0) (type default))
     (uuid 9d81168e-8a97-468c-af79-f483625d3e15)
   )
+  (wire (pts (xy 205.74 135.89) (xy 208.28 135.89))
+    (stroke (width 0) (type default))
+    (uuid a0f0037d-1f0e-49eb-a5d6-821212bf6392)
+  )
   (wire (pts (xy 198.12 99.06) (xy 198.12 101.6))
     (stroke (width 0) (type default))
     (uuid a3ddbeb2-ed39-4f75-a2e4-0e6c11ecd070)
@@ -1951,10 +1918,6 @@
   (wire (pts (xy 119.38 115.57) (xy 127 115.57))
     (stroke (width 0) (type default))
     (uuid a6a02610-9cb5-494f-bc19-a0e9daf747a0)
-  )
-  (wire (pts (xy 198.12 139.7) (xy 198.12 142.24))
-    (stroke (width 0) (type default))
-    (uuid a7a02fd1-fe70-43f0-a200-ab93747ac693)
   )
   (wire (pts (xy 262.89 92.71) (xy 262.89 85.09))
     (stroke (width 0) (type default))
@@ -1996,6 +1959,10 @@
     (stroke (width 0) (type default))
     (uuid d01d0969-e68a-4c45-a08a-3709e891dd42)
   )
+  (wire (pts (xy 208.28 143.51) (xy 208.28 146.05))
+    (stroke (width 0) (type default))
+    (uuid d0fb5e1c-e0eb-4b84-aa99-c51e7ce25a52)
+  )
   (wire (pts (xy 119.38 135.89) (xy 127 135.89))
     (stroke (width 0) (type default))
     (uuid d2fbafd0-4ed3-4433-823e-3e7eef76ca9d)
@@ -2008,7 +1975,7 @@
     (stroke (width 0) (type default))
     (uuid d7111600-62db-400f-a1f3-53af99921b27)
   )
-  (wire (pts (xy 212.09 137.16) (xy 214.63 137.16))
+  (wire (pts (xy 205.74 140.97) (xy 208.28 140.97))
     (stroke (width 0) (type default))
     (uuid d893e39e-41bc-466c-90bc-d7a4a782d3fc)
   )
@@ -2064,7 +2031,7 @@
     (stroke (width 0) (type default))
     (uuid f54f0937-9a29-4b73-8f58-7d7782ad55c4)
   )
-  (wire (pts (xy 212.09 134.62) (xy 214.63 134.62))
+  (wire (pts (xy 205.74 138.43) (xy 208.28 138.43))
     (stroke (width 0) (type default))
     (uuid f5b4555e-9af1-4602-9da0-07daa78ade41)
   )
@@ -2093,7 +2060,7 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 072c8395-ce52-4465-9884-e2ac932780b9)
   )
-  (text "External Connectors" (at 184.15 120.65 0)
+  (text "External Connector" (at 184.15 119.38 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 0c1f811e-1e41-47a7-9927-a3e6d6d91dca)
   )
@@ -2182,10 +2149,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9cb0f6a1-13c8-4ed2-86f7-612456c2b2aa)
   )
-  (label "RXD" (at 198.12 137.16 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9ffb758a-fd8c-4b70-8944-9286979536c8)
-  )
   (label "TERM" (at 127 133.35 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid a07baf52-0e33-41d8-9be5-634cf23be240)
@@ -2202,10 +2165,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c5e5dc9c-9bdd-457b-bb01-db4ff85321fe)
   )
-  (label "TXD" (at 198.12 134.62 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid e37dbf3b-6f14-4559-94a2-c3e2f92b90c7)
-  )
   (label "D-" (at 127 115.57 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ff0c4540-0600-4b5f-a061-a2ce9de46ef8)
@@ -2218,10 +2177,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "CAN_L" (shape input) (at 214.63 137.16 0) (fields_autoplaced)
+  (global_label "CAN_L" (shape input) (at 208.28 140.97 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 371a66d6-a826-4013-9dd4-3e8d990ffc26)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.2206 137.16 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 216.8706 140.97 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2246,10 +2205,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "CAN_H" (shape input) (at 214.63 134.62 0) (fields_autoplaced)
+  (global_label "CAN_H" (shape input) (at 208.28 138.43 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid ceb315be-23c7-4cf6-ae6d-1efbd8aa9ef0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.523 134.62 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 217.173 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2275,7 +2234,7 @@
     (pin "4" (uuid 6e46ea5a-5cef-491a-88c4-dfb62314f684))
     (pin "5" (uuid ad31b531-3735-4579-897d-616e9502a211))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "U1") (unit 1)
         )
@@ -2301,7 +2260,7 @@
     (pin "1" (uuid fe45d6ba-f62e-4b73-b352-3083bb9f21c8))
     (pin "2" (uuid 70fb1f87-e635-4887-b410-dba82aa53ffe))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "C1") (unit 1)
         )
@@ -2327,7 +2286,7 @@
     (pin "1" (uuid c7f182fe-16cc-42c6-8420-9779bdc15e48))
     (pin "2" (uuid 66257c09-fd62-47f2-92e9-5250ae2ae87d))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "C2") (unit 1)
         )
@@ -2352,7 +2311,7 @@
     )
     (pin "1" (uuid d5d900e0-a244-4bd7-b608-7716aac30bad))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR05") (unit 1)
         )
@@ -2377,7 +2336,7 @@
     )
     (pin "1" (uuid a5ebd3ab-aa96-48a6-ae15-7bf98a039f61))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR06") (unit 1)
         )
@@ -2402,7 +2361,7 @@
     )
     (pin "1" (uuid 3eb95244-d4a2-4921-b181-7476cb7c3b73))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR04") (unit 1)
         )
@@ -2439,7 +2398,7 @@
     (pin "B9" (uuid cd976b77-47a7-4157-8c1b-22bca254f3b0))
     (pin "S1" (uuid d138fd2b-ad2d-4592-9d4f-250f0dfef60b))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "P1") (unit 1)
         )
@@ -2464,7 +2423,7 @@
     )
     (pin "1" (uuid fbdbc638-37dc-47d4-9f20-92282b344909))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR01") (unit 1)
         )
@@ -2489,7 +2448,7 @@
     )
     (pin "1" (uuid 7c9dc2de-c142-45fa-afcf-0f22d3979304))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR03") (unit 1)
         )
@@ -2514,7 +2473,7 @@
     )
     (pin "1" (uuid 0027d026-9c10-4a9e-a8ca-d03b597927e9))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR02") (unit 1)
         )
@@ -2538,7 +2497,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "H1") (unit 1)
         )
@@ -2562,7 +2521,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "H2") (unit 1)
         )
@@ -2587,7 +2546,7 @@
     )
     (pin "1" (uuid 0014ba1c-1532-4c91-a4f0-c033508ee567))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#FLG01") (unit 1)
         )
@@ -2612,7 +2571,7 @@
     )
     (pin "1" (uuid 10dd2719-4cb6-45a6-9142-821479ed45aa))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#FLG02") (unit 1)
         )
@@ -2637,7 +2596,7 @@
     )
     (pin "1" (uuid 882e6bb8-6a48-406b-b66e-7fdce7291026))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "TP2") (unit 1)
         )
@@ -2662,7 +2621,7 @@
     )
     (pin "1" (uuid 997f68a3-4e13-43f1-ae59-5bc0dea14190))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "TP1") (unit 1)
         )
@@ -2687,7 +2646,7 @@
     )
     (pin "1" (uuid dbb11366-595c-45ab-a022-e0860786865d))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "TP3") (unit 1)
         )
@@ -2712,7 +2671,7 @@
     )
     (pin "1" (uuid c8612888-1574-4c4b-b26d-7d8b04a5406c))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "TP4") (unit 1)
         )
@@ -2737,35 +2696,9 @@
     )
     (pin "1" (uuid 71b129a3-c985-413c-8a27-cf1175e46add))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR0101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 207.01 137.16 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0019ab04-1bfc-4040-b802-974b62d6a819)
-    (property "Reference" "J2" (at 207.01 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Screw_Terminal_01x02" (at 213.36 130.81 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" (at 207.01 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 207.01 137.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid adc26fcf-2ac3-4bdd-83bd-0f1ea23b66a5))
-    (pin "2" (uuid c493ccb3-1d44-4213-abc9-5ee9cb27545c))
-    (instances
-      (project "CAN-UART"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "J2") (unit 1)
         )
       )
     )
@@ -2796,7 +2729,7 @@
     (pin "5" (uuid f050ab70-a7ce-4734-8569-070a40cb2439))
     (pin "6" (uuid 484db6c9-97a9-4511-bf7a-468812aae707))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "CN1") (unit 1)
         )
@@ -2827,7 +2760,7 @@
     (pin "1" (uuid 2d6cb880-648a-4641-bad3-462a9d3fe658))
     (pin "2" (uuid 9e1c53e8-dcc1-4dc9-bd89-4c62ce0dd66b))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "C3") (unit 1)
         )
@@ -2845,46 +2778,6 @@
       (project "ESP32-S3-Expansion"
         (path "/fb4ba2fe-1d6d-4cc7-9c97-5f7d41344916"
           (reference "C3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 198.12 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 10fa595d-9a0e-49f1-9ae8-32b9fe7d92c3)
-    (property "Reference" "#PWR014" (at 198.12 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 198.12 147.32 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 198.12 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 198.12 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 28176c2c-f330-410c-a4cf-638ff6644d27))
-    (instances
-      (project "CAN-UART"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR014") (unit 1)
-        )
-      )
-      (project "Andromeda-mkII"
-        (path "/828656dd-6a21-4917-a16e-ca9e39bf37f8"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Andromeda32-S3"
-        (path "/be31e571-bd5d-4296-830e-05334f237a7a"
-          (reference "#PWR023") (unit 1)
-        )
-      )
-      (project "ESP32-S3-Expansion"
-        (path "/fb4ba2fe-1d6d-4cc7-9c97-5f7d41344916"
-          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -2928,7 +2821,7 @@
     (pin "3" (uuid 80b7a4d1-b441-4948-9184-2c7a3715d70b))
     (pin "4" (uuid a881457f-51ea-4560-aace-ce829cfb85cd))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "LED1") (unit 1)
         )
@@ -2946,6 +2839,31 @@
       (project "ESP32-S3-Expansion"
         (path "/fb4ba2fe-1d6d-4cc7-9c97-5f7d41344916"
           (reference "LED1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_4") (lib_id "power:GND") (at 208.28 146.05 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 20973bd4-a62a-4834-a443-84e64d1396b7)
+    (property "Reference" "#PWR010" (at 208.28 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 208.28 151.13 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 208.28 146.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 208.28 146.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 05c5481d-c797-47c0-bf5f-7c3a095f9155))
+    (instances
+      (project "CAN"
+        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2970,7 +2888,7 @@
     (pin "2" (uuid 9b4e2d5b-b6a4-4081-abc1-34a0c65a6642))
     (pin "3" (uuid 2b6545ab-81a8-43b3-81fc-1b659112fe56))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "Q2") (unit 1)
         )
@@ -2995,7 +2913,7 @@
     )
     (pin "1" (uuid fdf29e3a-fa5c-4dcd-a7d3-027e537cd87a))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR017") (unit 1)
         )
@@ -3018,34 +2936,6 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 187.96 134.62 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3d2363dd-48d4-469e-8454-d045ee5f4cb1)
-    (property "Reference" "J1" (at 187.96 125.73 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x04" (at 187.96 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" (at 187.96 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 187.96 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a25650c6-ac74-4de7-84c7-15633a734693))
-    (pin "2" (uuid b763f50e-568e-46aa-a4ae-ac00173fbf25))
-    (pin "3" (uuid 6b1044de-6c03-48ea-8428-35bba309dae2))
-    (pin "4" (uuid 1efdf4a9-8bb9-45b8-86d9-cf86153fb32e))
-    (instances
-      (project "CAN-UART"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 204.47 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42bc4569-2121-4903-8559-ef8d9782405e)
@@ -3063,7 +2953,7 @@
     )
     (pin "1" (uuid f084f2f0-ad72-461f-a439-58e2b63a868d))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR018") (unit 1)
         )
@@ -3103,7 +2993,7 @@
     )
     (pin "1" (uuid c86f41bc-db72-4d31-bb91-93ee7ea15abd))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR016") (unit 1)
         )
@@ -3143,7 +3033,7 @@
     )
     (pin "1" (uuid b89424c0-21ee-4ac3-b701-ecbea09fc2d6))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR015") (unit 1)
         )
@@ -3183,7 +3073,7 @@
     )
     (pin "1" (uuid dcb85add-a1f6-4e6c-9032-5aa15eca0243))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR020") (unit 1)
         )
@@ -3206,36 +3096,6 @@
     )
   )
 
-  (symbol (lib_name "VBUS_1") (lib_id "power:VBUS") (at 198.12 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 651eefd4-ceff-44a5-ac6e-8ac321eb4dea)
-    (property "Reference" "#PWR013" (at 198.12 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 198.12 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 198.12 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 198.12 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1e3991a2-dfd0-4f41-b0da-90be6f0f817e))
-    (instances
-      (project "CAN-UART"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR013") (unit 1)
-        )
-      )
-      (project "ESP32-S3-Expansion"
-        (path "/fb4ba2fe-1d6d-4cc7-9c97-5f7d41344916"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+3V3") (at 236.22 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b4ffe6e-5706-4140-9fea-f7273d8bde3d)
@@ -3253,7 +3113,7 @@
     )
     (pin "1" (uuid 7ae94e88-ac37-41cd-8f8b-f283f856b5be))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR022") (unit 1)
         )
@@ -3293,7 +3153,7 @@
     )
     (pin "1" (uuid 50feb8d0-3fb8-4341-896d-48f299b879ed))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR023") (unit 1)
         )
@@ -3318,7 +3178,7 @@
     )
     (pin "1" (uuid 570e540f-eb58-423f-a23b-c8ad0db5d6dc))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR019") (unit 1)
         )
@@ -3365,7 +3225,7 @@
     (pin "7" (uuid e26f051e-0756-4a8b-a641-fdbc1232ff9d))
     (pin "8" (uuid a7d8551c-7ba7-4d75-ba50-28ee2e2e9a7d))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "U2") (unit 1)
         )
@@ -3390,9 +3250,34 @@
     )
     (pin "1" (uuid 91fdde16-2a4f-438f-8f92-a1c88567497f))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VBUS") (at 208.28 133.35 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c006e7fc-95d3-4b82-a6d9-1b7a72d7309e)
+    (property "Reference" "#PWR011" (at 208.28 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VBUS" (at 208.661 128.9558 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 208.28 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 208.28 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4122cdbe-9058-4dec-978a-48abcd138958))
+    (instances
+      (project "CAN"
+        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3415,7 +3300,7 @@
     )
     (pin "1" (uuid 58b38945-ac7d-4064-a281-0150bc974161))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR09") (unit 1)
         )
@@ -3441,7 +3326,7 @@
     (pin "1" (uuid e90c52e7-c847-42e0-94a8-5baa4fd8ab06))
     (pin "2" (uuid c30fb457-84eb-4e17-a049-c2d67d288539))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "R2") (unit 1)
         )
@@ -3466,7 +3351,7 @@
     )
     (pin "1" (uuid 12bd2c26-7862-441a-b179-61270398334e))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR021") (unit 1)
         )
@@ -3506,7 +3391,7 @@
     )
     (pin "1" (uuid 0a7497d9-ef60-4397-ae68-6ef81d3f2791))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR08") (unit 1)
         )
@@ -3531,7 +3416,7 @@
     )
     (pin "1" (uuid 3e05c4ba-c173-45cd-9b53-902f682c5c14))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "#PWR07") (unit 1)
         )
@@ -3557,7 +3442,7 @@
     (pin "1" (uuid b15cdfb3-e0b8-49ec-8d3f-ad72ac71373c))
     (pin "2" (uuid a31ca4fe-ae1f-4437-9217-d0ca8746fc31))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "R1") (unit 1)
         )
@@ -3583,7 +3468,7 @@
     (pin "1" (uuid 07940868-fe6e-4738-888e-a6d39e030ff1))
     (pin "2" (uuid c755a3cb-801a-4870-96fb-23ddf1e3b662))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "R3") (unit 1)
         )
@@ -3609,7 +3494,7 @@
     (pin "1" (uuid a8718072-c5f0-4b4b-a84a-6dbe130660ae))
     (pin "2" (uuid cf45ed80-f02f-4b3e-a54f-bcba62832231))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "C4") (unit 1)
         )
@@ -3651,9 +3536,37 @@
     (pin "2" (uuid 9402a2cb-bd46-418a-9dcf-c8cd88e12ddb))
     (pin "3" (uuid efc75902-688d-46c9-8d3e-5932e32699fe))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "Q1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 200.66 138.43 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid fb15ca22-7d00-4723-88de-5d5a95fb2719)
+    (property "Reference" "J1" (at 196.85 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Screw_Terminal_01x04" (at 196.85 130.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 200.66 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 200.66 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7b46055f-7811-42b9-8453-a8fc16a1a5fa))
+    (pin "2" (uuid 115188a5-fea1-48b7-9d7a-a1516927de0d))
+    (pin "3" (uuid f789027f-f469-4fde-8644-3fc10b113a00))
+    (pin "4" (uuid 3b754dc7-3c07-44a1-bf08-096256014c15))
+    (instances
+      (project "CAN"
+        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3728,7 +3641,7 @@
     (pin "8" (uuid 0a648e37-125a-4844-81d4-a1f5922079ca))
     (pin "9" (uuid bdb980c3-22f2-4089-bcb8-d7f4885df961))
     (instances
-      (project "CAN-UART"
+      (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "U5") (unit 1)
         )
