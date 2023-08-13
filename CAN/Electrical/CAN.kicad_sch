@@ -2695,7 +2695,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 198.12 140.97 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 589cdac2-297a-48ef-b6bc-cdb825616d04)
-    (property "Reference" "J3" (at 198.12 129.54 0)
+    (property "Reference" "J1" (at 198.12 129.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x04" (at 198.12 132.08 0)
@@ -2714,7 +2714,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "J3") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -2772,30 +2772,6 @@
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 189.23 21.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a3e22073-830c-46d4-8cb4-b33520ea3475)
-    (property "Reference" "H3" (at 191.77 20.3454 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 191.77 22.6568 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 189.23 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 189.23 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "CAN"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "H3") (unit 1)
         )
       )
     )
