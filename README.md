@@ -6,7 +6,8 @@ Since I've first seen the Framework Laptop, designing my own Hardware has always
 
 ## Table of Contents
 
-- [2 USB-C](https://github.com/Baumistlustig/Expansioncards/tree/master/2-usb-c) A USB-C Hub card
-- [Power output](https://github.com/Baumistlustig/Expansioncards/tree/master/power-output) A USB-C PD Trigger card
-- [SD-Card](https://github.com/Baumistlustig/Expansioncards/tree/master/sd-card) A full-size SD-Card
-- [Uart](https://github.com/Baumistlustig/Expansioncards/tree/master/uart/) A uart interface card
+- [CAN](/CAN) A CAN Interface
+- [2 USB-C](/2-usb-c) A USB-C Hub card
+- [Power output](/power-output) A USB-C PD Trigger card
+- [SD-Card](/sd-card) A full-size SD-Card
+- [Uart](/uart/) A uart interface card
