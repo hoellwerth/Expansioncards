@@ -3256,7 +3256,7 @@
     (property "Reference" "TP5" (at 176.7332 22.4028 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 176.7332 24.7142 0)
+    (property "Value" "VBUS" (at 176.7332 24.7142 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm" (at 180.34 25.4 0)
@@ -3487,7 +3487,7 @@
   (symbol (lib_id "Switch:SW_DIP_x02") (at 199.39 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c48f71a6-c787-4f32-948d-6e33f62461a6)
-    (property "Reference" "SW1" (at 199.39 127 0)
+    (property "Reference" "SW2" (at 199.39 127 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_DIP_x02" (at 199.39 129.54 0)
@@ -3506,7 +3506,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "SW1") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -3840,7 +3840,7 @@
     (property "Reference" "TP6" (at 176.7332 30.0228 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 176.7332 32.3342 0)
+    (property "Value" "3.3V" (at 176.7332 32.3342 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm" (at 180.34 33.02 0)
@@ -3887,7 +3887,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 245.11 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe419e14-cff5-46ed-b3b5-2f00bbb2e8c4)
-    (property "Reference" "SW2" (at 245.11 45.72 0)
+    (property "Reference" "SW1" (at 245.11 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 245.11 48.26 0)
@@ -3904,7 +3904,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "SW2") (unit 1)
+          (reference "SW1") (unit 1)
         )
       )
     )
