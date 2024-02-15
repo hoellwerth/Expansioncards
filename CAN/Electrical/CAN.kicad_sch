@@ -5,12 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "Expansion Card Template")
-    (date "2020-12-12")
-    (rev "X1")
-    (company "Framework")
-    (comment 1 "This work is licensed under a Creative Commons Attribution 4.0 International License")
-    (comment 4 "https://frame.work")
+    (title "CAN - Expansion Card")
+    (date "2024-02-15")
+    (rev "X2")
+    (company "Johannes Höllwerth")
+    (comment 4 "https://hoellwerth.eu")
   )
 
   (lib_symbols
@@ -2044,9 +2043,6 @@
   (junction (at 134.62 110.49) (diameter 0) (color 0 0 0 0)
     (uuid 26079b45-0a28-41dd-babd-526e0b3a4c00)
   )
-  (junction (at 33.02 110.49) (diameter 0) (color 0 0 0 0)
-    (uuid 32d2d0ec-e021-4625-9500-2458d04041f0)
-  )
   (junction (at 137.16 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 3b0be23c-973c-4b77-85f3-566f14b8a52a)
   )
@@ -2145,6 +2141,9 @@
   )
   (junction (at 129.54 100.33) (diameter 0) (color 0 0 0 0)
     (uuid e1f11282-4447-4619-9433-695006f77a16)
+  )
+  (junction (at 33.02 110.49) (diameter 0) (color 0 0 0 0)
+    (uuid e2d5fb9e-ae6d-4ee8-a949-ceb08dfaa063)
   )
   (junction (at 53.34 100.33) (diameter 0) (color 0 0 0 0)
     (uuid fd08d0af-afcd-484f-80f9-951c0a03b435)
@@ -2386,7 +2385,7 @@
     (stroke (width 0) (type default))
     (uuid 427ad9ab-c435-4cae-8f27-9d284f8e0098)
   )
-  (wire (pts (xy 53.34 109.22) (xy 53.34 110.49))
+  (wire (pts (xy 53.34 107.95) (xy 53.34 110.49))
     (stroke (width 0) (type default))
     (uuid 437ce546-c9be-427f-afc0-5cc27cb8beba)
   )
@@ -2434,7 +2433,7 @@
     (stroke (width 0) (type default))
     (uuid 4bd1a0bd-7197-464b-818b-dd9ebdefccbf)
   )
-  (wire (pts (xy 53.34 100.33) (xy 53.34 101.6))
+  (wire (pts (xy 53.34 100.33) (xy 53.34 102.87))
     (stroke (width 0) (type default))
     (uuid 4c92dda8-8890-4217-bc1f-1e7a6bb2a137)
   )
@@ -2541,6 +2540,10 @@
   (wire (pts (xy 88.9 156.21) (xy 91.44 156.21))
     (stroke (width 0) (type default))
     (uuid 725caa93-297d-4587-831c-4ffc62a786ee)
+  )
+  (wire (pts (xy 33.02 109.22) (xy 33.02 110.49))
+    (stroke (width 0) (type default))
+    (uuid 72a5958e-d714-4f78-889c-09363803357d)
   )
   (wire (pts (xy 85.09 110.49) (xy 95.25 110.49))
     (stroke (width 0) (type default))
@@ -2850,6 +2853,10 @@
     (stroke (width 0) (type default))
     (uuid de7a0ea9-ed4a-427c-8240-396c44f6741c)
   )
+  (wire (pts (xy 33.02 100.33) (xy 33.02 101.6))
+    (stroke (width 0) (type default))
+    (uuid e00938f5-31e8-401c-be68-6c0deafbd1b8)
+  )
   (wire (pts (xy 189.23 26.67) (xy 194.31 26.67))
     (stroke (width 0) (type default))
     (uuid e04637a1-19de-46db-ae0a-f21c42421e1c)
@@ -2890,10 +2897,6 @@
     (stroke (width 0) (type default))
     (uuid e5a6f309-94ba-41f1-b2c3-49d396521797)
   )
-  (wire (pts (xy 33.02 107.95) (xy 33.02 110.49))
-    (stroke (width 0) (type default))
-    (uuid e74a3f27-d5f3-466e-9e1b-bd003a6e5680)
-  )
   (wire (pts (xy 160.02 148.59) (xy 167.64 148.59))
     (stroke (width 0) (type default))
     (uuid e7b15713-b8b1-4959-94be-ae32f3ef20ff)
@@ -2917,10 +2920,6 @@
   (wire (pts (xy 99.06 166.37) (xy 104.14 166.37))
     (stroke (width 0) (type default))
     (uuid f3f4c5a0-9a79-4761-89b7-740abadb455d)
-  )
-  (wire (pts (xy 33.02 100.33) (xy 33.02 102.87))
-    (stroke (width 0) (type default))
-    (uuid f4dc7adf-cd4d-40e9-8b7a-db3b92d8d00c)
   )
   (wire (pts (xy 194.31 34.29) (xy 194.31 33.02))
     (stroke (width 0) (type default))
@@ -3118,7 +3117,7 @@
   (symbol (lib_id "Device:C_Small") (at 81.28 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd33d8e)
-    (property "Reference" "C7" (at 83.6168 38.2016 0)
+    (property "Reference" "C1" (at 83.6168 38.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 83.6168 40.513 0)
@@ -3135,7 +3134,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C7") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3144,7 +3143,7 @@
   (symbol (lib_id "Device:C_Small") (at 115.57 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd346b0)
-    (property "Reference" "C13" (at 117.9068 38.2016 0)
+    (property "Reference" "C2" (at 117.9068 38.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 117.9068 40.513 0)
@@ -3161,7 +3160,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C13") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -3170,7 +3169,7 @@
   (symbol (lib_id "power:GND") (at 99.06 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd420e4)
-    (property "Reference" "#PWR010" (at 99.06 54.61 0)
+    (property "Reference" "#PWR08" (at 99.06 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.187 52.6542 0)
@@ -3186,7 +3185,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -3195,7 +3194,7 @@
   (symbol (lib_id "power:VBUS") (at 81.28 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd43873)
-    (property "Reference" "#PWR08" (at 81.28 29.21 0)
+    (property "Reference" "#PWR01" (at 81.28 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 81.661 21.0058 0)
@@ -3211,7 +3210,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -3257,7 +3256,7 @@
   (symbol (lib_id "power:GND") (at 36.83 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd7a664)
-    (property "Reference" "#PWR02" (at 36.83 81.28 0)
+    (property "Reference" "#PWR09" (at 36.83 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.957 79.3242 0)
@@ -3273,7 +3272,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3282,7 +3281,7 @@
   (symbol (lib_id "power:GND") (at 67.31 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fd7ac88)
-    (property "Reference" "#PWR05" (at 67.31 48.26 0)
+    (property "Reference" "#PWR07" (at 67.31 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.437 46.3042 0)
@@ -3298,7 +3297,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3382,7 +3381,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 156.21 25.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000606a78c1)
-    (property "Reference" "TP3" (at 157.6832 22.4028 0)
+    (property "Reference" "TP2" (at 157.6832 22.4028 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 157.6832 24.7142 0)
@@ -3398,7 +3397,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP3") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
     )
@@ -3432,7 +3431,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 144.78 33.02 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000606a8c9b)
-    (property "Reference" "TP2" (at 146.2532 30.0228 0)
+    (property "Reference" "TP5" (at 146.2532 30.0228 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 146.2532 32.3342 0)
@@ -3448,7 +3447,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP2") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -3457,7 +3456,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 156.21 33.02 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000606a8e98)
-    (property "Reference" "TP4" (at 157.6832 30.0228 0)
+    (property "Reference" "TP6" (at 157.6832 30.0228 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 157.6832 32.3342 0)
@@ -3473,7 +3472,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP4") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -3482,7 +3481,7 @@
   (symbol (lib_id "power:GND") (at 139.7 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000606a9b9c)
-    (property "Reference" "#PWR014" (at 139.7 41.91 0)
+    (property "Reference" "#PWR06" (at 139.7 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.827 39.9542 0)
@@ -3498,7 +3497,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -3507,7 +3506,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 010fc703-8971-4726-97bd-925eafc7513e)
-    (property "Reference" "C6" (at 72.39 104.14 0)
+    (property "Reference" "C7" (at 72.39 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10nF" (at 72.39 106.68 0)
@@ -3524,7 +3523,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C6") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -3558,7 +3557,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 194.31 25.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 098d9044-dc88-41fb-adc2-ac5d43912007)
-    (property "Reference" "TP7" (at 195.7832 22.4028 0)
+    (property "Reference" "TP4" (at 195.7832 22.4028 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TX" (at 195.7832 24.7142 0)
@@ -3574,7 +3573,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP7") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -3583,7 +3582,7 @@
   (symbol (lib_id "Device:C_Small") (at 88.9 161.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c98a1e9-4ea5-471f-99c8-43dc149042e4)
-    (property "Reference" "C10" (at 86.36 160.0263 0)
+    (property "Reference" "C16" (at 86.36 160.0263 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 86.36 162.5663 0)
@@ -3600,7 +3599,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C10") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -3609,7 +3608,7 @@
   (symbol (lib_id "Device:R") (at 275.59 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 127ccc7f-38b7-4aa7-a26d-cb7d9a4a912d)
-    (property "Reference" "R10" (at 278.13 107.95 0)
+    (property "Reference" "R3" (at 278.13 107.95 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "20R" (at 278.13 110.49 0)
@@ -3626,7 +3625,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R10") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3635,7 +3634,7 @@
   (symbol (lib_name "VBUS_2") (lib_id "power:VBUS") (at 195.58 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1ccb1f36-8400-4063-90e2-37200cba8deb)
-    (property "Reference" "#PWR018" (at 195.58 107.95 0)
+    (property "Reference" "#PWR014" (at 195.58 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 195.58 99.06 0)
@@ -3651,7 +3650,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -3686,7 +3685,7 @@
   (symbol (lib_name "GND_9") (lib_id "power:GND") (at 80.01 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 232bbda5-25ca-4496-bac1-91b2d6c6b6b8)
-    (property "Reference" "#PWR07" (at 80.01 154.94 0)
+    (property "Reference" "#PWR021" (at 80.01 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 153.67 0)
@@ -3702,7 +3701,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -3711,7 +3710,7 @@
   (symbol (lib_id "Device:R") (at 195.58 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 264bef44-759e-4321-ad0a-32bfbb4086a7)
-    (property "Reference" "R7" (at 198.12 109.22 0)
+    (property "Reference" "R4" (at 198.12 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.1k" (at 198.12 111.76 0)
@@ -3728,7 +3727,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R7") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3737,7 +3736,7 @@
   (symbol (lib_id "Device:C_Small") (at 121.92 110.49 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 265ff7ee-0aae-4b98-83a8-ab44f7bebd47)
-    (property "Reference" "C15" (at 119.38 109.22 90)
+    (property "Reference" "C12" (at 119.38 109.22 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 125.73 109.22 90)
@@ -3754,7 +3753,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C15") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3763,7 +3762,7 @@
   (symbol (lib_id "Device:R_Small") (at 62.23 123.19 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2dea36de-51ee-442d-88c8-52c052f08a71)
-    (property "Reference" "R3" (at 62.23 118.11 90)
+    (property "Reference" "R6" (at 62.23 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 62.23 120.65 90)
@@ -3780,7 +3779,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R3") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -3789,7 +3788,7 @@
   (symbol (lib_id "power:+3.3V") (at 115.57 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3aa3f978-9fc8-41c3-816a-678552446f3f)
-    (property "Reference" "#PWR011" (at 115.57 29.21 0)
+    (property "Reference" "#PWR02" (at 115.57 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 115.57 20.32 0)
@@ -3805,7 +3804,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -3814,7 +3813,7 @@
   (symbol (lib_id "Device:C_Small") (at 73.66 140.97 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b2d0518-0974-4a07-beb0-5867823dc128)
-    (property "Reference" "C5" (at 71.12 139.7 0)
+    (property "Reference" "C14" (at 71.12 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 71.12 142.24 0)
@@ -3831,7 +3830,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C5") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -3868,7 +3867,7 @@
   (symbol (lib_id "power:+3.3V") (at 57.15 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 418661de-200e-4875-9e21-55714b77a9f2)
-    (property "Reference" "#PWR03" (at 57.15 124.46 0)
+    (property "Reference" "#PWR017" (at 57.15 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 57.15 115.57 0)
@@ -3884,7 +3883,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3893,7 +3892,7 @@
   (symbol (lib_id "Device:C_Small") (at 43.18 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 43112c6e-0f83-4a88-857f-1b1fd56181e3)
-    (property "Reference" "C2" (at 40.64 104.14 0)
+    (property "Reference" "C4" (at 40.64 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 40.64 106.68 0)
@@ -3910,7 +3909,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C2") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -3919,7 +3918,7 @@
   (symbol (lib_id "Device:R") (at 255.27 128.27 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 471c0cc9-e55d-4429-9c1a-7f7167395485)
-    (property "Reference" "R9" (at 251.46 127 0)
+    (property "Reference" "R7" (at 251.46 127 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120R" (at 251.46 129.54 0)
@@ -3936,7 +3935,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R9") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -3967,10 +3966,36 @@
     )
   )
 
+  (symbol (lib_id "Device:C_Small") (at 53.34 105.41 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4d8a7b61-bbe0-45f6-87c1-69e627deb1df)
+    (property "Reference" "C5" (at 50.8 104.14 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10uF" (at 50.8 106.6863 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 53.34 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 53.34 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 91a2f700-6274-4e85-b396-30fe720fbd40))
+    (pin "1" (uuid 077701a3-607d-4560-b6f3-450fb3068b3f))
+    (instances
+      (project "CAN"
+        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
+          (reference "C5") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 116.84 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 523d55c8-2090-441e-b51f-294001acaeab)
-    (property "Reference" "C14" (at 114.3 104.14 0)
+    (property "Reference" "C11" (at 114.3 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 114.3 106.68 0)
@@ -3987,7 +4012,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C14") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4022,7 +4047,7 @@
   (symbol (lib_id "Isolator:FODM217D") (at 265.43 119.38 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6171a77a-db53-4f54-8e92-1c4ff4254a71)
-    (property "Reference" "U4" (at 265.43 110.49 0)
+    (property "Reference" "U3" (at 265.43 110.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "FODM217D" (at 265.43 113.03 0)
@@ -4041,7 +4066,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "U4") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -4050,7 +4075,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 175.26 25.4 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 62d1e3c7-034b-48ed-ab69-442d5d81bb10)
-    (property "Reference" "TP5" (at 176.7332 22.4028 0)
+    (property "Reference" "TP3" (at 176.7332 22.4028 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "VBUS" (at 176.7332 24.7142 0)
@@ -4066,7 +4091,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP5") (unit 1)
+          (reference "TP3") (unit 1)
         )
       )
     )
@@ -4075,7 +4100,7 @@
   (symbol (lib_id "Device:C_Small") (at 63.5 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65c5bf30-c080-487e-90ba-803c657227b1)
-    (property "Reference" "C3" (at 60.96 104.14 0)
+    (property "Reference" "C6" (at 60.96 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 60.96 106.6863 0)
@@ -4092,7 +4117,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C3") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -4101,7 +4126,7 @@
   (symbol (lib_name "GND_10") (lib_id "power:GND") (at 88.9 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 691791a8-9e6f-4271-b78e-ed4bf97223f7)
-    (property "Reference" "#PWR09" (at 88.9 172.72 0)
+    (property "Reference" "#PWR022" (at 88.9 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 171.45 0)
@@ -4117,7 +4142,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4126,7 +4151,7 @@
   (symbol (lib_name "GND_7") (lib_id "power:GND") (at 195.58 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6b76fec2-89af-4260-a941-c2bce2881a42)
-    (property "Reference" "#PWR019" (at 195.58 133.35 0)
+    (property "Reference" "#PWR018" (at 195.58 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 195.58 132.08 0)
@@ -4142,7 +4167,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -4151,7 +4176,7 @@
   (symbol (lib_id "power:+3.3V") (at 234.95 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6f430f40-ad9b-4699-b8f0-ad514cdcad6e)
-    (property "Reference" "#PWR020" (at 234.95 113.03 0)
+    (property "Reference" "#PWR015" (at 234.95 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 234.95 104.14 0)
@@ -4167,7 +4192,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4176,7 +4201,7 @@
   (symbol (lib_id "power:VBUS") (at 170.18 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 742fbe1e-68cb-4f50-abcf-5adc194b1a6b)
-    (property "Reference" "#PWR015" (at 170.18 29.21 0)
+    (property "Reference" "#PWR03" (at 170.18 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 170.561 21.0058 0)
@@ -4192,7 +4217,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -4201,7 +4226,7 @@
   (symbol (lib_id "Device:R_Small") (at 165.1 118.11 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7745be9f-22e0-49e2-9257-a03a3a65a5db)
-    (property "Reference" "R6" (at 165.1 113.03 90)
+    (property "Reference" "R5" (at 165.1 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "499R" (at 165.1 115.57 90)
@@ -4218,7 +4243,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R6") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -4227,7 +4252,7 @@
   (symbol (lib_id "Device:R") (at 97.79 138.43 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8482a2ad-0773-4295-b4de-b677e86f9d57)
-    (property "Reference" "R4" (at 93.98 137.16 90)
+    (property "Reference" "R9" (at 93.98 137.16 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0R" (at 101.6 137.16 90)
@@ -4244,7 +4269,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R4") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -4253,7 +4278,7 @@
   (symbol (lib_name "GND_1") (lib_id "power:GND") (at 33.02 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 866125b5-4122-404f-a20e-e175aff6faf0)
-    (property "Reference" "#PWR01" (at 33.02 119.38 0)
+    (property "Reference" "#PWR016" (at 33.02 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.02 118.11 0)
@@ -4269,7 +4294,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -4278,10 +4303,10 @@
   (symbol (lib_id "Device:D_Schottky") (at 60.96 31.75 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8fe3b66f-c0a3-4848-8b58-576c57a83991)
-    (property "Reference" "D2" (at 61.2775 25.4 0)
+    (property "Reference" "D1" (at 61.2775 25.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "D_Schottky" (at 61.2775 27.94 0)
+    (property "Value" "AVX" (at 61.2775 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 60.96 31.75 0)
@@ -4295,7 +4320,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -4304,7 +4329,7 @@
   (symbol (lib_id "Interface_CAN_LIN:SN65HVD230") (at 234.95 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 93f21074-b9f1-45c6-98fc-141d64855a9d)
-    (property "Reference" "U3" (at 220.98 109.22 0)
+    (property "Reference" "U2" (at 220.98 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN65HVD230" (at 220.98 111.76 0)
@@ -4327,7 +4352,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -4336,7 +4361,7 @@
   (symbol (lib_id "Device:C_Small") (at 86.36 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95e4eec0-fa82-4620-bf55-ad148b4b5cb1)
-    (property "Reference" "C9" (at 88.9 139.7 0)
+    (property "Reference" "C15" (at 88.9 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TBD" (at 88.9 142.24 0)
@@ -4353,33 +4378,33 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C9") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 33.02 105.41 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:D_TVS_Filled") (at 33.02 105.41 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9732f04a-9f46-47ad-929a-d0846fbbe56c)
-    (property "Reference" "C1" (at 30.48 104.14 0)
+    (uuid 982a66a7-f33e-43b5-9954-8d20db06c486)
+    (property "Reference" "D2" (at 30.48 104.14 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (at 30.48 106.6863 0)
+    (property "Value" "ESD" (at 30.48 106.68 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 33.02 105.41 0)
+    (property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 33.02 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 33.02 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 07392e20-cef4-42b1-983e-ef1c42744b23))
-    (pin "1" (uuid 2aa2faf7-bfad-4c39-88a9-8c98a0f8aa68))
+    (pin "1" (uuid b3c71f78-59c2-4796-870b-eb8ed120630b))
+    (pin "2" (uuid 5d9ec4c1-a612-40cb-b9b3-1b8bc95ae3c6))
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C1") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -4388,7 +4413,7 @@
   (symbol (lib_id "Device:C_Small") (at 95.25 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 985d1fb1-b701-4ffa-9bc6-bed91145d86d)
-    (property "Reference" "C11" (at 92.71 104.14 0)
+    (property "Reference" "C9" (at 92.71 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 92.71 106.68 0)
@@ -4405,7 +4430,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C11") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -4414,7 +4439,7 @@
   (symbol (lib_id "Device:R_Small") (at 99.06 163.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 99141dfc-3105-48bd-8ceb-0529005ade5c)
-    (property "Reference" "R5" (at 95.25 162.56 90)
+    (property "Reference" "R10" (at 95.25 162.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 95.25 165.1 90)
@@ -4431,7 +4456,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "R5") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -4440,7 +4465,7 @@
   (symbol (lib_name "GND_3") (lib_id "power:GND") (at 132.08 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a800fbde-972a-499d-aa71-9f7e6c5581eb)
-    (property "Reference" "#PWR012" (at 132.08 185.42 0)
+    (property "Reference" "#PWR023" (at 132.08 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 184.15 0)
@@ -4456,7 +4481,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -4465,7 +4490,7 @@
   (symbol (lib_id "Device:C_Small") (at 105.41 105.41 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b2fdebea-ce1d-4415-8138-7d53d8ce7f60)
-    (property "Reference" "C12" (at 102.87 104.14 0)
+    (property "Reference" "C10" (at 102.87 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 102.87 106.6863 0)
@@ -4482,7 +4507,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C12") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -4568,7 +4593,7 @@
   (symbol (lib_id "power:+3.3V") (at 170.18 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1e4339e-7dab-447c-be8c-023eea6604a6)
-    (property "Reference" "#PWR016" (at 170.18 36.83 0)
+    (property "Reference" "#PWR05" (at 170.18 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 170.18 29.21 0)
@@ -4584,7 +4609,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -4593,7 +4618,7 @@
   (symbol (lib_name "GND_2") (lib_id "power:GND") (at 234.95 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c63581c8-3401-428d-a6c9-c22cb87e5ece)
-    (property "Reference" "#PWR021" (at 234.95 146.05 0)
+    (property "Reference" "#PWR020" (at 234.95 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 144.78 0)
@@ -4609,7 +4634,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -4618,7 +4643,7 @@
   (symbol (lib_name "VBUS_1") (lib_id "power:VBUS") (at 237.49 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cba7ceb2-be88-40ef-a7f1-f3f654d3712c)
-    (property "Reference" "#PWR022" (at 237.49 78.74 0)
+    (property "Reference" "#PWR010" (at 237.49 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 237.49 69.85 0)
@@ -4634,7 +4659,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4667,7 +4692,7 @@
   (symbol (lib_name "GND_4") (lib_id "power:GND") (at 189.23 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d6cb5d7f-1fd6-42f7-a85b-eed979b8dd43)
-    (property "Reference" "#PWR017" (at 189.23 88.9 0)
+    (property "Reference" "#PWR011" (at 189.23 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 189.23 87.63 0)
@@ -4683,33 +4708,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR017") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:D_TVS_Filled") (at 53.34 105.41 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dc91b45e-0de2-4247-9887-e2296127574f)
-    (property "Reference" "D1" (at 50.8 104.14 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "ESD" (at 50.8 106.68 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 53.34 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 863aa4ec-b4a6-4b6c-b7a9-03e4a1d84561))
-    (pin "2" (uuid fb8f87a1-78fb-41c0-8776-0abe2af6bab1))
-    (instances
-      (project "CAN"
-        (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "D1") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -4744,7 +4743,7 @@
   (symbol (lib_name "GND_5") (lib_id "power:GND") (at 67.31 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e376af32-c3a6-4fae-8fd1-b96e8c8231a9)
-    (property "Reference" "#PWR06" (at 67.31 142.24 0)
+    (property "Reference" "#PWR019" (at 67.31 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.31 140.97 0)
@@ -4760,7 +4759,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4769,7 +4768,7 @@
   (symbol (lib_id "Espressif:ESP32-C3") (at 132.08 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e51830a4-bdcd-47db-a300-b3de5a631f45)
-    (property "Reference" "U2" (at 134.2741 176.53 0)
+    (property "Reference" "U4" (at 134.2741 176.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ESP32-C3" (at 134.2741 179.07 0)
@@ -4817,7 +4816,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "U2") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -4826,7 +4825,7 @@
   (symbol (lib_id "Device:C") (at 196.85 80.01 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5d8a224-a0f0-4eeb-bf96-6bc66eea25ff)
-    (property "Reference" "C16" (at 196.85 83.82 90)
+    (property "Reference" "C3" (at 196.85 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.1uF" (at 196.85 86.36 90)
@@ -4843,7 +4842,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C16") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -4852,7 +4851,7 @@
   (symbol (lib_name "GND_6") (lib_id "power:GND") (at 237.49 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7abdd0f-cd3e-429e-8378-9a8cd0e272fc)
-    (property "Reference" "#PWR023" (at 237.49 93.98 0)
+    (property "Reference" "#PWR012" (at 237.49 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 237.49 92.71 0)
@@ -4868,7 +4867,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -4877,7 +4876,7 @@
   (symbol (lib_id "Device:C") (at 67.31 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec7e2c41-97ea-41ae-9b45-94d207b25572)
-    (property "Reference" "C4" (at 62.23 128.27 0)
+    (property "Reference" "C13" (at 62.23 128.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 60.96 130.81 0)
@@ -4894,7 +4893,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "C4") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -4903,7 +4902,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 175.26 33.02 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid f2d4e3c1-d1a1-43c2-9ae9-4a1921a446e7)
-    (property "Reference" "TP6" (at 176.7332 30.0228 0)
+    (property "Reference" "TP7" (at 176.7332 30.0228 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3V" (at 176.7332 32.3342 0)
@@ -4919,7 +4918,7 @@
     (instances
       (project "CAN"
         (path "/21020eba-b649-4135-9bee-384d0a5cab58"
-          (reference "TP6") (unit 1)
+          (reference "TP7") (unit 1)
         )
       )
     )
